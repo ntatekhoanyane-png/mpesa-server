@@ -1,11 +1,13 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS 
 import requests
 import base64
 import rsa
 
 app = Flask(__name__)
+CORS(app)
 
-# 🔐 PASTE YOUR VALUES HERE
+
 API_KEY ="hWCyWCPt7uuhzRjdKldIE8KEVInOR66u"
 
 
